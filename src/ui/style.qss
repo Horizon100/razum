@@ -1,0 +1,204 @@
+QMainWindow {
+    background-color: #f8f9fa;
+}
+
+QWidget {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 14px;
+}
+
+/* Tabs */
+QTabWidget::pane {
+    border: 1px solid #dee2e6;
+    background: white;
+    padding: 10px;
+    position: absolute;
+}
+
+QTabWidget::tab-bar {
+    alignment: left;
+    transition: all 250ms ease-in-out;
+
+}
+
+QTabBar::tab {
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    padding: 8px 16px;
+    margin-right: 2px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    color: gray;
+}
+
+QTabBar::tab:selected {
+    background: white;
+    border-bottom-color: white;
+    color: black;
+}
+
+QTabBar::tab:hover {
+    background: #e9ecef;
+}
+
+/* Buttons */
+QPushButton {
+    background-color: #007bff;
+    color: white;
+    border: 1px solid #0056b3;
+    padding: 6px 12px;
+    border-radius: 4px;
+    min-width: 80px;
+    transition: background-color 150ms, border-color 150ms;
+}
+
+QPushButton:hover {
+    background-color: #0069d9;
+    border-color: #0056b3;
+}
+
+QPushButton:pressed {
+    background-color: #0056b3;
+}
+
+QPushButton:disabled {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+/* Group Boxes */
+QGroupBox {
+    background-color: white;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    margin-top: 16px;
+    padding-top: 16px;
+    transition: border-color 200ms, background-color 200ms;
+}
+
+QGroupBox:hover {
+    border-color: #007bff;
+    background-color: #f8f9fa;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    padding: 4px 8px;
+    background-color: white;
+    color: #212529;
+    font-weight: bold;
+}
+
+/* Labels */
+QLabel {
+    color: #212529;
+    padding: 4px;
+}
+
+/* Status Bar */
+QStatusBar {
+    background-color: #f8f9fa;
+    color: #6c757d;
+    border-top: 1px solid #dee2e6;
+}
+
+/* Splitter */
+QSplitter::handle {
+    background-color: #dee2e6;
+    transition: background-color 200ms;
+}
+
+QSplitter::handle:hover {
+    background-color: #adb5bd;
+}
+
+QSplitter::handle:horizontal {
+    width: 4px;
+}
+
+QSplitter::handle:vertical {
+    height: 4px;
+}
+
+/* Scroll Bars */
+QScrollBar:vertical {
+    border: none;
+    background: #f8f9fa;
+    width: 10px;
+    margin: 0px;
+    transition: width 150ms;
+}
+
+QScrollBar:vertical:hover {
+    width: 15px;
+}
+
+QScrollBar::handle:vertical {
+    background: #adb5bd;
+    min-height: 20px;
+    border-radius: 5px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #6c757d;
+}
+
+/* Frame */
+QFrame {
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+}
+
+/* Custom Classes */
+.primary-button {
+    transition: all 200ms ease-in-out;
+}
+
+.primary-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.primary-button:pressed {
+    transform: translateY(0px);
+    box-shadow: none;
+}
+.success-button {
+    background-color: #28a745;
+    color: white;
+}
+
+.danger-button {
+    background-color: #dc3545;
+    color: white;
+}
+
+.warning-button {
+    background-color: #ffc107;
+    color: #212529;
+}
+
+.info-button {
+    background-color: #17a2b8;
+    color: white;
+}
+
+.metric-label {
+    font-size: 16px;
+    padding: 8px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    transition: background-color 200ms, transform 200ms;
+}
+
+.metric-label:hover {
+    background-color: #e9ecef;
+    transform: translateX(5px);
+}
+
+.header-label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #212529;
+}
